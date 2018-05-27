@@ -13,6 +13,7 @@ socket.on('echo', function(message) {
 function send_message(name, content)
 {
     socket.emit('message', {name: sessionStorage.getItem('name'), content: content});
+    document.getElementById('input-send').value = '';
 }
 
 function create_message(name, content)
