@@ -1,0 +1,38 @@
+
+#chat-container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    border: 1px solid red;
+}
+
+#chat-history {
+    height: 100%;
+
+    overflow-y: scroll;
+
+    border: 1px solid blue;
+}
+
+#chat-message {
+    padding: 10px;
+}
+
+#chat-box {
+    display: flex;
+    margin: 0;
+    margin-top: auto;
+    width: 100%;
+    height: 25px;
+    border: 1px solid green;
+}
+
+#input-send {
+    width: 100%;
+}
+
+#btn-send {
+    margin-left: auto;
+}

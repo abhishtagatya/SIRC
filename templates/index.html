@@ -1,0 +1,29 @@
+
+<!DOCTYPE hmtl>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IRC - Chat</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/CSS/Chat/style.css">
+</head>
+<body>
+    <!-- HTML -->
+    <div id="chat-container">
+        <div id="chat-history"></div>
+        <form id="chat-box" onsubmit="send_message(sessionStorage.getItem('name'), this.message.value);" action="javascript:void(0);">
+            <input name="message" id="input-send" type="text" placeholder="Send message...">
+            <input id="btn-send" type='button' value='Send'>
+        </form>
+    </div>
+
+    <!-- JS -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="static/JS/app.js"></script>
+</body>
+</html>
